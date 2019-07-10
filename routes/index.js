@@ -6,8 +6,11 @@ const models = require('../models');
 
 
 router.get('/', function(req, res, next) {
-  res.render('index', {
-    title: 'Home',
+  models.Garden.findAll().then(function(gardens) {
+    res.render('index', {
+      title: 'SF Green Grounds',
+      gardens: gardens
+    });
   });
 });
 

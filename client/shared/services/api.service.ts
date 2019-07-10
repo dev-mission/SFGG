@@ -70,6 +70,15 @@ export class ApiService {
     }
   }
 
+  gardens = {
+    index: (params?: HttpParams): Observable<any> => {
+      return this.get('/api/gardens/', params);
+    },
+    create: (data: any): Observable<any> => {
+      return this.post('/api/gardens/', data);
+    }
+  };
+
   users = {
     me: (params?: HttpParams): Observable<any> => {
       return this.get('/api/users/me/', params);

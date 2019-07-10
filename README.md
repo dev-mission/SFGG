@@ -1,4 +1,4 @@
-# Full-Stack Starter
+# SF Green Grounds
 
 ## Docker-based Development
 
@@ -12,7 +12,7 @@
 
 ## License
 
-Full-Stack Starter
+SF Green Grounds
 Copyright (C) 2019 <dev/Mission>
 
 This program is free software: you can redistribute it and/or modify

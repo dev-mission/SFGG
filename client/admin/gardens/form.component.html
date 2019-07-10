@@ -1,0 +1,60 @@
+<div class="form-group">
+  <label for="name">Name</label>
+  <input [(ngModel)]="record.name" [class.is-invalid]="error.messages|error:'name'" type="text" class="form-control" id="name" name="name">
+  <div *ngIf="error.messages|error:'name'" class="invalid-feedback">{{(error.messages|error:'name').message}}</div>
+</div>
+<div class="form-group">
+  <label for="shortDescription">Short Description</label>
+  <textarea [(ngModel)]="record.shortDescription" [class.is-invalid]="error.messages|error:'shortDescription'" type="text" class="form-control" id="shortDescription" name="shortDescription"></textarea>
+  <div *ngIf="error.messages|error:'shortDescription'" class="invalid-feedback">{{(error.messages|error:'shortDescription').message}}</div>
+</div>
+<div class="form-group">
+  <label for="address">Street Address</label>
+  <input [(ngModel)]="record.address" [class.is-invalid]="error.messages|error:'address'" type="text" class="form-control" id="address" name="address">
+  <div *ngIf="error.messages|error:'address'" class="invalid-feedback">{{(error.messages|error:'address').message}}</div>
+</div>
+<div class="form-group">
+  <label for="crossStreet">Cross Street</label>
+  <input [(ngModel)]="record.crossStreet" [class.is-invalid]="error.messages|error:'crossStreet'" type="text" class="form-control" id="crossStreet" name="crossStreet">
+  <div *ngIf="error.messages|error:'crossStreet'" class="invalid-feedback">{{(error.messages|error:'crossStreet').message}}</div>
+</div>
+<div class="form-group">
+  <label for="city">City</label>
+  <input [(ngModel)]="record.city" [class.is-invalid]="error.messages|error:'city'" type="text" class="form-control" id="city" name="city">
+  <div *ngIf="error.messages|error:'city'" class="invalid-feedback">{{(error.messages|error:'city').message}}</div>
+</div>
+<div class="form-group">
+  <label for="zipCode">ZIP Code</label>
+  <input [(ngModel)]="record.zipCode" [class.is-invalid]="error.messages|error:'zipCode'" type="text" class="form-control" id="zipCode" name="zipCode">
+  <div *ngIf="error.messages|error:'zipCode'" class="invalid-feedback">{{(error.messages|error:'zipCode').message}}</div>
+</div>
+<div class="form-group">
+  <label for="neighborhood">Neighborhood</label>
+  <input [(ngModel)]="record.neighborhood" [class.is-invalid]="error.messages|error:'neighborhood'" type="text" class="form-control" id="neighborhood" name="neighborhood">
+  <div *ngIf="error.messages|error:'neighborhood'" class="invalid-feedback">{{(error.messages|error:'neighborhood').message}}</div>
+</div>
+<div class="form-group">
+  <label for="managedBy">Managed By</label>
+  <input [(ngModel)]="record.managedBy" [class.is-invalid]="error.messages|error:'managedBy'" type="text" class="form-control" id="managedBy" name="managedBy">
+  <div *ngIf="error.messages|error:'managedBy'" class="invalid-feedback">{{(error.messages|error:'managedBy').message}}</div>
+</div>
+<div class="form-group">
+  <label for="openHours">Open Hours</label>
+  <textarea [(ngModel)]="record.openHours" [class.is-invalid]="error.messages|error:'openHours'" type="text" class="form-control" id="openHours" name="openHours"></textarea>
+  <div *ngIf="error.messages|error:'openHours'" class="invalid-feedback">{{(error.messages|error:'openHours').message}}</div>
+</div>
+<div class="form-group">
+  <label for="contactEmail">Contact Email</label>
+  <input [(ngModel)]="record.contactEmail" [class.is-invalid]="error.messages|error:'contactEmail'" type="text" class="form-control" id="contactEmail" name="contactEmail">
+  <div *ngIf="error.messages|error:'contactEmail'" class="invalid-feedback">{{(error.messages|error:'contactEmail').message}}</div>
+</div>
+<div class="form-group">
+  <label for="contactPhone">Contact Phone</label>
+  <input [(ngModel)]="record.contactPhone" [class.is-invalid]="error.messages|error:'contactPhone'" type="text" class="form-control" id="contactPhone" name="contactPhone">
+  <div *ngIf="error.messages|error:'contactPhone'" class="invalid-feedback">{{(error.messages|error:'contactPhone').message}}</div>
+</div>
+<div class="form-group">
+  <label for="contactLink">Contact Link</label>
+  <input [(ngModel)]="record.contactLink" [class.is-invalid]="error.messages|error:'contactLink'" type="text" class="form-control" id="contactLink" name="contactLink">
+  <div *ngIf="error.messages|error:'contactLink'" class="invalid-feedback">{{(error.messages|error:'contactLink').message}}</div>
+</div>

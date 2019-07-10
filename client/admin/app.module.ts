@@ -7,6 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { GardensModule } from './gardens/gardens.module';
 import { UsersModule } from './users/users.module';
 
 import { ApiService, NavigationService, UserService } from '../shared/services';
@@ -20,6 +21,7 @@ import { ApiService, NavigationService, UserService } from '../shared/services';
     AppRoutingModule,
     BrowserModule,
     FormsModule,
+    GardensModule,
     HttpClientModule,
     NgbModule,
     UsersModule
