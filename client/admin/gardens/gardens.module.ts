@@ -6,10 +6,11 @@ import { SharedComponentsModule } from '../../shared/components';
 import { SharedPipesModule } from '../../shared/pipes';
 
 import { GardensRoutingModule } from './gardens-routing.module';
-import { GardenFormComponent, ListGardensComponent, NewGardenComponent } from '.';
+import { EditGardenComponent, GardenFormComponent, ListGardensComponent, NewGardenComponent } from '.';
 
 @NgModule({
   declarations: [
+    EditGardenComponent,
     GardenFormComponent,
     ListGardensComponent,
     NewGardenComponent,

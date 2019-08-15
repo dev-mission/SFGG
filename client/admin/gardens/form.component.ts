@@ -7,4 +7,16 @@ import { Component, Input } from '@angular/core';
 export class GardenFormComponent {
   @Input() record: any;
   @Input() error: any;
+
+  photo: any = null;
+
+  onPhotoRemove(record: any) {
+    record.photoUrl = null;
+    this.photo = null;
+  }
+
+  onPhotoUploaded(record: any, upload: any) {
+    record.photoUrl = upload.href;
+    this.photo = upload;
+  }
 }

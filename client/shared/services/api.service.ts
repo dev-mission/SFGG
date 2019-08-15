@@ -76,7 +76,13 @@ export class ApiService {
     },
     create: (data: any): Observable<any> => {
       return this.post('/api/gardens/', data);
-    }
+    },
+    get: (id: string, params?: HttpParams): Observable<any> => {
+      return this.get(`/api/gardens/${id}`, params);
+    },
+    update: (id: string, data: any): Observable<any> => {
+      return this.patch(`/api/gardens/${id}`, data);
+    },
   };
 
   users = {

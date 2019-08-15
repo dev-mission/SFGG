@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ListGardensComponent, NewGardenComponent } from '.';
+import { EditGardenComponent, ListGardensComponent, NewGardenComponent } from '.';
 
 const appRoutes: Routes = [
   {
@@ -11,6 +11,10 @@ const appRoutes: Routes = [
       {
         path: 'new',
         component: NewGardenComponent
+      },
+      {
+        path: ':id',
+        component: EditGardenComponent
       }
     ]
   }

@@ -9,6 +9,18 @@
   <div *ngIf="error.messages|error:'shortDescription'" class="invalid-feedback">{{(error.messages|error:'shortDescription').message}}</div>
 </div>
 <div class="form-group">
+  <label for="photo">Photo</label>
+  <div *ngIf="photo && photo.dataURL" style="width: 200px;">
+    <img [src]="photo.dataURL" class="img-fluid img-thumbnail mb-2" />
+    <button (click)="onPhotoRemove(record)" type="button" class="btn btn-sm btn-outline-danger">Remove</button>
+  </div>
+  <div *ngIf="!photo && record.photoUrl" style="width: 200px;">
+    <img [src]="record.photoUrl|asset" class="img-fluid img-thumbnail mb-2" />
+    <button (click)="onPhotoRemove(record)" type="button" class="btn btn-sm btn-outline-danger">Remove</button>
+  </div>
+  <app-shared-uploader *ngIf="!record.photoUrl" (onUploaded)="onPhotoUploaded(record, $event)"></app-shared-uploader>
+</div>
+<div class="form-group">
   <label for="address">Street Address</label>
   <input [(ngModel)]="record.address" [class.is-invalid]="error.messages|error:'address'" type="text" class="form-control" id="address" name="address">
   <div *ngIf="error.messages|error:'address'" class="invalid-feedback">{{(error.messages|error:'address').message}}</div>
